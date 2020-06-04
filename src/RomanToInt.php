@@ -4,24 +4,24 @@ namespace jr\romantoint;
 
 class RomanToInt
 {
+    private $romanParts =
+        [
+            9 => 'IX',
+            5 => 'V',
+            4 => 'IV',
+        ];
+
     public function convert($int)
     {
         $roman = '';
 
-        if ($int == 4)
+        foreach ($this->romanParts as $intPart => $romanPart)
         {
-            $roman = 'IV';
-            $int -= 4;
-        }
-        elseif ($int == 9)
-        {
-            $roman = 'IX';
-            $int -= 9;
-        }
-        elseif ($int >= 5)
-        {
-            $roman = 'V';
-            $int -= 5;
+            if ($int >= $intPart)
+            {
+                $roman .= $romanPart;
+                $int -= $intPart;
+            }
         }
 
         $roman .= str_repeat('I', $int);
