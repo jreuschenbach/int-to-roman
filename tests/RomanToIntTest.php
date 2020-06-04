@@ -8,6 +8,7 @@ class RomanToIntTest extends TestCase
     private $convertValues = [
         1 => 'I',
         2 => 'II',
+        3 => 'III',
     ];
 
     public function testConvert()
