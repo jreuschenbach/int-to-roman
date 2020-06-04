@@ -13,6 +13,11 @@ class RomanToInt
             $roman = 'IV';
             $int -= 4;
         }
+        elseif ($int == 9)
+        {
+            $roman = 'IX';
+            $int -= 9;
+        }
         elseif ($int >= 5)
         {
             $roman = 'V';
