@@ -11,16 +11,16 @@ class RomanToInt
         if ($int == 4)
         {
             $roman = 'IV';
+            $int -= 4;
         }
-        elseif ($int == 5)
+        elseif ($int >= 5)
         {
             $roman = 'V';
-        }
-        else
-        {
-            $roman = str_repeat('I', $int);
+            $int -= 5;
         }
 
+        $roman .= str_repeat('I', $int);
+        
         return $roman;
     }
 }
