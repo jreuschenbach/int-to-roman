@@ -20,7 +20,7 @@ class RomanToInt
         }
 
         $roman .= str_repeat('I', $int);
-        
+
         return $roman;
     }
 }
