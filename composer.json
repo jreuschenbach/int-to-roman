@@ -1,0 +1,21 @@
+{
+  "name": "jr/roman-to-int",
+  "description": "convert roman numerals to int // TDD demo project",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Janosch Reuschenbach",
+      "email": "j.reuschenbach@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  },
+
+  "autoload": {
+    "psr-4": {"jr\\romantoint\\": "src/"}
+  }
+}
