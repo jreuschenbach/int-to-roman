@@ -5,10 +5,18 @@ use jr\romantoint\RomanToInt;
 
 class RomanToIntTest extends TestCase
 {
+    private $convertValues = [
+        1 => 'I',
+        2 => 'II',
+    ];
+
     public function testConvert()
     {
         $romanToInt = new RomanToInt();
-        $this->assertEquals('I', $romanToInt->convert(1));
-        $this->assertEquals('II', $romanToInt->convert(2));
+
+        foreach ($this->convertValues as $int => $roman)
+        {
+            $this->assertEquals($roman, $romanToInt->convert($int));
+        }
     }
 }
