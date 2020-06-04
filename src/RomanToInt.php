@@ -6,11 +6,17 @@ class RomanToInt
 {
     public function convert($int)
     {
+        $roman = '';
+
         if ($int == 4)
         {
-            return 'IV';
+            $roman = 'IV';
+        }
+        else
+        {
+            $roman = str_repeat('I', $int);
         }
 
-        return str_repeat('I', $int);
+        return $roman;
     }
 }
