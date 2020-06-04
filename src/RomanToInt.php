@@ -12,6 +12,10 @@ class RomanToInt
         {
             $roman = 'IV';
         }
+        elseif ($int == 5)
+        {
+            $roman = 'V';
+        }
         else
         {
             $roman = str_repeat('I', $int);
