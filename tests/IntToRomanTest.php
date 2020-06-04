@@ -50,6 +50,7 @@ class IntToRomanTest extends TestCase
         50 => 'L',
         90 => 'XC',
         100 => 'C',
+        400 => 'CD',
     ];
 
     public function testConvert()

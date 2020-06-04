@@ -6,6 +6,7 @@ class IntToRoman
 {
     private $romanParts =
         [
+            400 => 'CD',
             100 => 'C',
             90 => 'XC',
             50 => 'L',
