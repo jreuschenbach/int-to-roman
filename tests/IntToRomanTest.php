@@ -46,6 +46,8 @@ class IntToRomanTest extends TestCase
         38 => 'XXXVIII',
         39 => 'XXXIX',
         40 => 'XL',
+        41 => 'XLI',
+        50 => 'L',
     ];
 
     public function testConvert()
