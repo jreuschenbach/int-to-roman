@@ -9,5 +9,6 @@ class RomanToIntTest extends TestCase
     {
         $romanToInt = new RomanToInt();
         $this->assertEquals('I', $romanToInt->convert(1));
+        $this->assertEquals('II', $romanToInt->convert(2));
     }
 }

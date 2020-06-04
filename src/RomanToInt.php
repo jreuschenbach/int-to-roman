@@ -6,6 +6,6 @@ class RomanToInt
 {
     public function convert($int)
     {
-        return 'I';
+        return str_repeat('I', $int);
     }
 }
